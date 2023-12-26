@@ -235,7 +235,20 @@ section .footer .row.row2 ul:nth-child(2) a:hover {
  text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
-
-
+@media only screen and (max-width: 600px) {
+ section{
+  position: relative;
+  width: 145%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+ }
+ main{
+  margin-top: -40px;
+ }
+ section footer{
+  position: relative;
+bottom: 0;
+ }
 }
