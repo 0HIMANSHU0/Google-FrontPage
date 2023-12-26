@@ -303,7 +303,7 @@ section .footer .row.row2 ul:nth-child(2) a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 145vh;
  }
 
  .main {
@@ -323,7 +323,7 @@ section .footer .row.row2 ul:nth-child(2) a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 95vh;
+  min-height: 145vh;
  }
 
  .main {
