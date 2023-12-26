@@ -2,78 +2,123 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Google</title>
- <link rel="stylesheet" href="style.css">
- <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/google-icon-512x512-tqc9el3r.png"
-  type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/google-icon-512x512-tqc9el3r.png"
+    type="image/x-icon">
 </head>
 
 <body>
- <section>
-  <header>
-   <ul>
-    <li><a href="#">Gmail</a></li>
-    <li><a href="#">Images</a></li>
-    <li><a href="#" onclick="openPopup()"><img src="./assets/bars.png"></a></li>
-    <li><button>Sign In</button></li>
-   </ul>
-   <div class="popup" id="popup">
-    <h2>User Account!</h2>
-    <p>Your other google services are displayed here!</p>
-   </div>
-  </header>
-  <div class="main">
-   <img src="./assets/google.png" alt="Google Image">
-   <div class="searchBox">
-    <input type="text" class="search" id="input-box">
-    <div class="icons">
-     <div><img src="./assets/search.png" alt=""></div>
-     <div><img src="./assets/mic.png" alt=""></div>
-    </div>
-    <div class="result-box">
-     
-    </div>
-   </div>
-   <div class="buttons">
-    <button>Google Search</button>
-    <button>I'm Feeling Lucky</button>
-   </div>
-   <ul class="languages">
-    <li>Google offered in:</li>
-    <li><a href="#">हिन्दी</a></li>
-    <li><a href="#">বাংলা</a></li>
-    <li><a href="#">తెలుగు</a></li>
-    <li><a href="#">मराठी</a></li>
-    <li><a href="#">தமிழ்</a></li>
-    <li><a href="#">ગુજરાતી</a></li>
-    <li><a href="#">ಕನ್ನಡ</a></li>
-    <li><a href="#">മലയാളം</a></li>
-    <li><a href="#">ਪੰਜਾਬੀ</a></li>
-   </ul>
-  </div>
-  <div class="footer">
-   <div class="row row1">
-    <p class="country">India</p>
-   </div>
-   <div class="row row2">
-    <ul>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Advertising</a></li>
-     <li><a href="#">Business</a></li>
-     <li><a href="#">How Search Works</a></li>
-    </ul>
-    <ul>
-     <li><a href="#">Privacy</a></li>
-     <li><a href="#">Terms</a></li>
-     <li><a href="#">Settings</a></li>
-    </ul>
-   </div>
-  </div>
- </section>
+  <section>
+    <header>
+      <ul>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#" onclick="openPopup()"><img src="./assets/bars.png"></a></li>
+        <li><a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1727154373%3A1703573476494599&theme=glif"><button>Sign In</button></a></li>
+      </ul>
+      <div class="popup" id="popup">
+        <div class="menuRow">
+          <ul>
+            <li><a href="#"><img src="/assets/Google_Account.png" alt="">Account</a></li>
+            <li><a href="#"><img src="/assets/google-meet.png" alt="">Meet</a></li>
+            <li><a href="#"><img src="/assets/Google_IconMain.png" alt="">Search</a></li>
+          </ul>
+        </div>
+        <div class="menuRow">
+          <ul>
+            <li><a href="https://www.youtube.com"><img src="/assets/youtube.png" alt="">Youtube</a></li>
+            <li><a href="#"><img src="/assets/google-maps.png" alt="">Maps</a></li>
+            <li><a href="#"><img src="/assets/google-play.png" alt="">Playstore</a></li>
+          </ul>
+        </div>
+        <div class="menuRow">
+          <ul>
+            <li><a href="#"><img src="/assets/Google_News.png" alt="">News</a></li>
+            <li><a href="#"><img src="/assets/Gmail_Logo.png" alt="">Gmail</a></li>
+            <li><a href="#"><img src="/assets/Google_Chat.png" alt="">Chats</a></li>
+          </ul>
+        </div>
+        <div class="menuRow">
+          <ul>
+            <li><a href="#"><img src="/assets/my-business.png" alt="">Business</a></li>
+            <li><a href="#"><img src="/assets/Google_Drive.png" alt="">Drive</a></li>
+            <li><a href="#"><img src="/assets/google-calendar.png" alt="">Calendar</a></li>
+          </ul>
+        </div>
+        <div class="menuRow">
+          <ul>
+            <li><a href="#"><img src="/assets/Google_Translate.png" alt="">Translator</a></li>
+            <li><a href="#"><img src="/assets/google-photos.png" alt="">Photos</a></li>
+            <li><a href="#"><img src="/assets/shopping.png" alt="">shopping</a></li>
+          </ul>
+        </div>
+        <div class="menuRow">
+          <ul>
+            <li><a href="#"><img src="/assets/Google_Docs.png" alt="">Docs</a></li>
+            <li><a href="#"><img src="/assets/Google_Sheets.png" alt="">Sheets</a></li>
+            <li><a href="#"><img src="/assets/Google_Slides.png" alt="">Slides</a></li>
+          </ul>
+        </div>
+        <!-- <div class="menuRow">
+          <ul>
+            <li><a href="#"><img src="/assets/my-business.png" alt="">Business</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </header>
+    <div class="main">
+      <img src="./assets/google.png" alt="Google Image">
+      <div class="searchBox">
+        <input type="text" class="search" id="input-box">
+        <div class="icons">
+          <div><img src="./assets/search.png" alt=""></div>
+          <div><img src="./assets/mic.png" alt=""></div>
+        </div>
+        <div class="result-box">
 
- <script src="index.js"></script>
+        </div>
+      </div>
+      <div class="buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+      </div>
+      <ul class="languages">
+        <li>Google offered in:</li>
+        <li><a href="#">हिन्दी</a></li>
+        <li><a href="#">বাংলা</a></li>
+        <li><a href="#">తెలుగు</a></li>
+        <li><a href="#">मराठी</a></li>
+        <li><a href="#">தமிழ்</a></li>
+        <li><a href="#">ગુજરાતી</a></li>
+        <li><a href="#">ಕನ್ನಡ</a></li>
+        <li><a href="#">മലയാളം</a></li>
+        <li><a href="#">ਪੰਜਾਬੀ</a></li>
+      </ul>
+    </div>
+    <div class="footer">
+      <div class="row row1">
+        <p class="country">India</p>
+      </div>
+      <div class="row row2">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">How Search Works</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

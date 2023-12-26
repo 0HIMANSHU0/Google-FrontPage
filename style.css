@@ -5,6 +5,34 @@
  font-family: 'arial', 'sans-serif';
 }
 
+/* Code for the Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+ width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 5px grey; 
+ border-radius: 10px;
+ overflow: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(201, 182, 182); 
+ border-radius: 10px;
+ overflow: hidden;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #c9baba; 
+ overflow: hidden;
+
+}
+
 section {
  position: relative;
  width: 100%;
@@ -12,6 +40,7 @@ section {
  justify-content: center;
  align-items: center;
  min-height: 100vh;
+ overflow: hidden;
 }
 
 header {
@@ -25,7 +54,7 @@ header {
 
 header ul {
  display: flex;
- justify-content: center;
+ justify-content: space-between;
  align-items: center;
 }
 
@@ -36,12 +65,12 @@ header ul li {
 
 header ul li a {
  text-decoration: none;
- font-size: 14px;
+ font-size: 15px;
  color: #111;
  cursor: pointer;
 }
 
-header ul li a:hover{
+header ul li a:hover {
  text-decoration: underline;
 }
 
@@ -102,16 +131,48 @@ section .main .searchBox .icons {
  /* display: none; */
  position: absolute;
  top: 0;
- border: 1px solid red;
- border-radius: 7px;
+ border: 6px solid rgb(215, 206, 206);
+ border-radius: 12px;
  padding: 10px 8px;
  visibility: hidden;
+ height: 365px;
+ box-sizing: border-box;
+ z-index: 99;
+ width: 308px;
+}
 
+#popup .menuRow ul {
+ text-align: center;
+ padding: 12px 5px;
+ box-sizing: border-box;
 }
 
 .open-popup {
  visibility: visible;
  top: 60px;
+ background: white;
+ overflow-y: scroll;
+}
+
+#popup .menuRow ul li {
+ /* background-color: rgb(209, 101, 134); */
+ box-sizing: border-box;
+ margin: 4px 6px;
+ padding: 10px 12px;
+}
+#popup .menuRow ul li a{
+ text-decoration: none;
+ font-size: 14px;
+}
+
+#popup .menuRow ul li:hover {
+ cursor: pointer;
+ /* border: 1px solid black; */
+ background-color: rgb(138, 199, 230);
+ border: none;
+ margin: 4px 6px;
+ padding: 10px 12px;
+ border-radius: 14px;
 }
 
 section .main .searchBox .result-box {
@@ -236,19 +297,41 @@ section .footer .row.row2 ul:nth-child(2) a:hover {
 }
 
 @media only screen and (max-width: 600px) {
- section{
+ section {
   position: relative;
   width: 145%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height:100vh;
+  min-height: 80vh;
  }
- main{
+
+ .main {
   margin-top: -40px;
  }
- section footer{
+
+ section .footer {
+  position: absolute;
+  bottom: 0;
+ }
+}
+
+@media only screen and (max-width: 768px) {
+ section {
   position: relative;
-bottom: 0;
+  width: 145%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+ }
+
+ .main {
+  margin-top: -40px;
+ }
+
+ section .footer {
+  position: absolute;
+  bottom: 0;
  }
 }
