@@ -5,6 +5,10 @@
  font-family: 'arial', 'sans-serif';
 }
 
+html{
+ scroll-behavior: smooth;
+}
+
 /* Code for the Custom Scrollbar */
 
 /* width */
@@ -311,7 +315,7 @@ section .footer .row.row2 ul:nth-child(2) a:hover {
  }
 
  section .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
  }
 }
@@ -331,7 +335,7 @@ section .footer .row.row2 ul:nth-child(2) a:hover {
  }
 
  section .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
  }
 }

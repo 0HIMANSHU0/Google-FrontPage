@@ -69,10 +69,14 @@ function selectInput(list) {
 let popup = document.getElementById("popup");
 
 function openPopup() {
- if(popup.className == 'popup'){
-  popup.classList.add('open-popup');
- }
- else{
-  popup.classList.remove('open-popup');
- }
+
+  popup.classList.toggle('open-popup');
 }
+window.onclick = (event) =>{
+  if(!event.target.matches('.imgMenu')){
+    if(popup.classList.contains('open-popup')){
+      popup.classList.remove('open-popup')
+    }
+  }
+}
+popup.addEventListener('click',event => event.stopPropagation())
